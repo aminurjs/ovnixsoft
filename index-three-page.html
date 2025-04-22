@@ -1,983 +1,1158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--<< Header Area >>-->
-    <head>
-        <!-- ========== Meta Tags ========== -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="wordpressriver">
-        <meta name="description" content="Agznko - Creative Agency and Portfolio Html Template">
-        <!-- ======== Page title ============ -->
-        <title>Agznko - Creative Agency and Portfolio Html Template</title>
-        <!--<< Favcion >>-->
-        <link rel="shortcut icon" href="assets/img/favicon.svg">
-        <!--<< Bootstrap min.css >>-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!--<< All Min Css >>-->
-        <link rel="stylesheet" href="assets/css/all.min.css">
-        <!--<< Animate.css >>-->
-        <link rel="stylesheet" href="assets/css/animate.css">
-        <!--<< Magnific Popup.css >>-->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
-        <!--<< MeanMenu.css >>-->
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <!--<< Swiper Bundle.css >>-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <!--<< Nice Select.css >>-->
-        <link rel="stylesheet" href="assets/css/nice-select.css">
-        <!--<< Color.css >>-->
-        <link rel="stylesheet" href="assets/css/color.css">
-        <!--<< Main.css >>-->
-        <link rel="stylesheet" href="assets/css/main.css">
-    </head>
-    <body class="body-bg">
-
-         <!-- Preloader Start -->
-         <div id="preloader" class="preloader">
-            <div class="animation-preloader">
-                <div class="spinner">                
-                </div>
-                <div class="txt-loading">
-                    <span data-text-preloader="A" class="letters-loading">
-                        A
-                    </span>
-                    <span data-text-preloader="G" class="letters-loading">
-                        G
-                    </span>
-                    <span data-text-preloader="Z" class="letters-loading">
-                        Z
-                    </span>
-                    <span data-text-preloader="N" class="letters-loading">
-                        N
-                    </span>
-                    <span data-text-preloader="K" class="letters-loading">
-                        K
-                    </span>
-                    <span data-text-preloader="0" class="letters-loading">
-                        O
-                    </span>
-                </div>
-                <p class="text-center">Loading</p>
-            </div>
-            <div class="loader">
-                <div class="row">
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
-                </div>
-            </div>
+  <!--<< Header Area >>-->
+  <head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="wordpressriver" />
+    <meta
+      name="description"
+      content="Agznko - Creative Agency and Portfolio Html Template"
+    />
+    <!-- ======== Page title ============ -->
+    <title>Agznko - Creative Agency and Portfolio Html Template</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg" />
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <!--<< Color.css >>-->
+    <link rel="stylesheet" href="assets/css/color.css" />
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="body-bg">
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+          <span data-text-preloader="A" class="letters-loading"> A </span>
+          <span data-text-preloader="G" class="letters-loading"> G </span>
+          <span data-text-preloader="Z" class="letters-loading"> Z </span>
+          <span data-text-preloader="N" class="letters-loading"> N </span>
+          <span data-text-preloader="K" class="letters-loading"> K </span>
+          <span data-text-preloader="0" class="letters-loading"> O </span>
         </div>
-
-        <!--<< Mouse Cursor Start >>-->  
-        <div class="mouse-cursor cursor-outer"></div>
-        <div class="mouse-cursor cursor-inner"></div>
-
-        <!-- Back To Top start -->
-        <button id="back-top" class="back-to-top">
-            <i class="fa-regular fa-arrow-up"></i>
-        </button>
-
-        <!-- Offcanvas Area Start -->
-        <div class="fix-area">
-            <div class="offcanvas__info">
-                <div class="offcanvas__wrapper">
-                    <div class="offcanvas__content">
-                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
-                            <div class="offcanvas__logo">
-                                <a href="index.html">
-                                    <img src="assets/img/logo/white-logo.svg" alt="logo-img">
-                                </a>
-                            </div>
-                            <div class="offcanvas__close">
-                                <button>
-                                <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <p class="text d-none d-xl-block">
-                            Nullam dignissim, ante scelerisque the  is euismod fermentum odio sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
-                        </p>
-                        <div class="mobile-menu fix mb-3"></div>
-                        <div class="offcanvas__contact">
-                            <h4>Contact Info</h4>
-                            <ul>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon">
-                                        <i class="fal fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="fal fa-envelope"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a href="mailto:info@example.com"><span class="mailto:info@example.com">info@example.com</span></a>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="fal fa-clock"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <div class="offcanvas__contact-icon mr-15">
-                                        <i class="far fa-phone"></i>
-                                    </div>
-                                    <div class="offcanvas__contact-text">
-                                        <a href="tel:+11002345909">+11002345909</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="header-button mt-4">
-                                <a href="contact.html" class="theme-btn text-center">
-                                    Get A Quote
-                                </a>
-                            </div>
-                            <div class="social-icon d-flex align-items-center">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <p class="text-center">Loading</p>
+      </div>
+      <div class="loader">
+        <div class="row">
+          <div class="col-3 loader-section section-left">
+            <div class="bg"></div>
+          </div>
+          <div class="col-3 loader-section section-left">
+            <div class="bg"></div>
+          </div>
+          <div class="col-3 loader-section section-right">
+            <div class="bg"></div>
+          </div>
+          <div class="col-3 loader-section section-right">
+            <div class="bg"></div>
+          </div>
         </div>
-        <div class="offcanvas__overlay"></div>
+      </div>
+    </div>
 
-        <!-- Header Section Start -->
-        <header id="header-sticky" class="header-1">
-            <div class="container">
-                <div class="mega-menu-wrapper">
-                    <div class="header-main">
-                        <div class="logo">
-                            <a href="index.html" class="header-logo">
-                                <img src="assets/img/logo/white-logo.svg" alt="logo-img">
-                            </a>
-                        </div>
-                        <div class="mean__menu-wrapper">
-                            <div class="main-menu">
-                                <nav id="mobile-menu">
-                                    <ul>
-                                        <li class="has-dropdown active menu-thumb">
-                                            <a href="index.html">
-                                                Home 
-                                                <i class="fa-solid fa-chevron-down"></i>
-                                            </a>
-                                            <ul class="submenu has-homemenu">
-                                                <li>
-                                                    <div class="homemenu-items">
-                                                        <div class="homemenu">
-                                                            <div class="homemenu-thumb">
-                                                                <img src="assets/img/header/home-1.jpg" alt="img">
-                                                                <div class="demo-button">
-                                                                    <a href="index.html" class="theme-btn">
-                                                                        Multi Page
-                                                                    </a>
-                                                                    <a href="index-one-page.html" class="theme-btn">
-                                                                        One Page
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="homemenu-content text-center">
-                                                                <h4 class="homemenu-title">
-                                                                    Home 01
-                                                                </h4>
-                                                            </div>
-                                                        </div>
-                                                        <div class="homemenu">
-                                                            <div class="homemenu-thumb mb-15">
-                                                                <img src="assets/img/header/home-2.jpg" alt="img">
-                                                                <div class="demo-button">
-                                                                    <a href="index-2.html" class="theme-btn">
-                                                                        Multi Page
-                                                                    </a>
-                                                                    <a href="index-two-page.html" class="theme-btn">
-                                                                        One Page
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="homemenu-content text-center">
-                                                                <h4 class="homemenu-title">
-                                                                    Home 02
-                                                                </h4>
-                                                            </div>
-                                                        </div>
-                                                        <div class="homemenu">
-                                                            <div class="homemenu-thumb mb-15">
-                                                                <img src="assets/img/header/home-3.jpg" alt="img">
-                                                                <div class="demo-button">
-                                                                    <a href="index-3.html" class="theme-btn">
-                                                                        Multi Page
-                                                                    </a>
-                                                                    <a href="index-three-page.html" class="theme-btn">
-                                                                        One Page
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="homemenu-content text-center">
-                                                                <h4 class="homemenu-title">
-                                                                    Home 03
-                                                                </h4>
-                                                            </div>
-                                                        </div>
-                                                        <div class="homemenu">
-                                                            <div class="homemenu-thumb mb-15">
-                                                                <img src="assets/img/header/home-4.jpg" alt="img">
-                                                                <div class="demo-button">
-                                                                    <a href="index-4.html" class="theme-btn">
-                                                                        Multi Page
-                                                                    </a>
-                                                                    <a href="index-four-page.html" class="theme-btn">
-                                                                        One Page
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="homemenu-content text-center">
-                                                                <h4 class="homemenu-title">
-                                                                    Home 04
-                                                                </h4>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-dropdown active d-xl-none">
-                                            <a href="team.html" class="border-none">
-                                            Home
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="index.html">Home 01</a></li>
-                                                <li><a href="index-2.html">Home 02</a></li>
-                                                <li><a href="index-3.html">Home 03</a></li>
-                                                <li><a href="index-4.html">Home 04</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="#about">About Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#services">Services</a>
-                                        </li>
-                                        <li>
-                                            <a href="#projects">Projects</a>
-                                        </li>
-                                        <li>
-                                            <a href="#team">Team</a>
-                                        </li>
-                                        <li>
-                                            <a href="#blog">Blog</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="header-right d-flex justify-content-end align-items-center">
-                            <div class="header-button">
-                                <a href="#0" class="search-trigger search-icon"><i class="fa-regular fa-magnifying-glass"></i></a>
-                               <a href="contact.html" class="theme-btn">Get In Touch</a>
-                            </div>
-                            <div class="header__hamburger d-xl-block my-auto">
-                                <div class="sidebar__toggle">
-                                    <i class="fas fa-bars"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
 
-        <!-- Search Area Start -->
-        <div class="search-wrap">
-            <div class="search-inner">
-                <i class="fas fa-times search-close" id="search-close"></i>
-                <div class="search-cell">
-                    <form method="get">
-                        <div class="search-field-holder">
-                            <input type="search" class="main-search-input" placeholder="Search...">
-                        </div>
-                    </form>
-                </div>
+    <!-- Back To Top start -->
+    <button id="back-top" class="back-to-top">
+      <i class="fa-regular fa-arrow-up"></i>
+    </button>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+      <div class="offcanvas__info">
+        <div class="offcanvas__wrapper">
+          <div class="offcanvas__content">
+            <div
+              class="offcanvas__top mb-5 d-flex justify-content-between align-items-center"
+            >
+              <div class="offcanvas__logo">
+                <a href="index.html">
+                  <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+                </a>
+              </div>
+              <div class="offcanvas__close">
+                <button>
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
             </div>
+            <p class="text d-none d-xl-block">
+              Nullam dignissim, ante scelerisque the is euismod fermentum odio
+              sem semper the is erat, a feugiat leo urna eget eros. Duis Aenean
+              a imperdiet risus.
+            </p>
+            <div class="mobile-menu fix mb-3"></div>
+            <div class="offcanvas__contact">
+              <h4>Contact Info</h4>
+              <ul>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon">
+                    <i class="fal fa-map-marker-alt"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a target="_blank" href="#"
+                      >Main Street, Melbourne, Australia</a
+                    >
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="fal fa-envelope"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a href="mailto:support@ovnixsoft.com"
+                      ><span class="mailto:support@ovnixsoft.com"
+                        >support@ovnixsoft.com</span
+                      ></a
+                    >
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="fal fa-clock"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="far fa-phone"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a href="tel:+11002345909">+11002345909</a>
+                  </div>
+                </li>
+              </ul>
+              <div class="header-button mt-4">
+                <a href="contact.html" class="theme-btn text-center">
+                  Get A Quote
+                </a>
+              </div>
+              <div class="social-icon d-flex align-items-center">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <!-- Hero Section Start -->
-        <section class="hero-section hero-3">
-            <div class="hero-bg">
-                <img src="assets/img/hero/hero-bg.png" alt="img">
+      </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header id="header-sticky" class="header-1">
+      <div class="container">
+        <div class="mega-menu-wrapper">
+          <div class="header-main">
+            <div class="logo">
+              <a href="index.html" class="header-logo">
+                <img src="assets/img/logo/white-logo.svg" alt="logo-img" />
+              </a>
             </div>
-            <div class="container">
-                <div class="row g-4">
-                   <div class="col-lg-6">
-                        <div class="hero-content">
-                            <h6 class="wow fadeInUp">Creative agency</h6>
-                            <h1 class="wow fadeInUp" data-wow-delay=".3s">
-                                Empowering Brands with <span>Creative</span> Innovation
-                            </h1>
-                            <p class="wow fadeInUp" data-wow-delay=".5s">
-                                We specialize in delivering cutting-edge solutions tailored to your needs. Whether you're looking you succeed. 
-                            </p>
-                            <div class="hero-button">
-                                <a href="index.html" class="theme-btn wow fadeInUp" data-wow-delay=".3s">Get Start a Project</a>
-                                <a href="index.html" class="theme-btn wow fadeInUp style-2" data-wow-delay=".5s">How It’s Works</a>
-                            </div>
-                        </div>
-                   </div>
-                   <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="hero-image-items">
-                            <div class="hero-image">
-                                <img src="assets/img/hero/01.png" alt="img">
-                            </div>
-                            <div class="hero-image-2">
-                                <img src="assets/img/hero/03.jpg" alt="img">
-                            </div>
-                            <div class="hero-image-3">
-                                <img src="assets/img/hero/04.jpg" alt="img">
-                            </div>
-                            <div class="circle-item">
-                                <div class="circle-text">
-                                    <img src="assets/img/hero/circle-text.png" alt="img">
+            <div class="mean__menu-wrapper">
+              <div class="main-menu">
+                <nav id="mobile-menu">
+                  <ul>
+                    <li class="has-dropdown active menu-thumb">
+                      <a href="index.html">
+                        Home
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </a>
+                      <ul class="submenu has-homemenu">
+                        <li>
+                          <div class="homemenu-items">
+                            <div class="homemenu">
+                              <div class="homemenu-thumb">
+                                <img
+                                  src="assets/img/header/home-1.jpg"
+                                  alt="img"
+                                />
+                                <div class="demo-button">
+                                  <a href="index.html" class="theme-btn">
+                                    Multi Page
+                                  </a>
+                                  <a
+                                    href="index-one-page.html"
+                                    class="theme-btn"
+                                  >
+                                    One Page
+                                  </a>
                                 </div>
-                                <div class="border-line">
-                                    <a href="about.html" class="arrow-icon">
-                                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                                    </a>
+                              </div>
+                              <div class="homemenu-content text-center">
+                                <h4 class="homemenu-title">Home 01</h4>
+                              </div>
+                            </div>
+                            <div class="homemenu">
+                              <div class="homemenu-thumb mb-15">
+                                <img
+                                  src="assets/img/header/home-2.jpg"
+                                  alt="img"
+                                />
+                                <div class="demo-button">
+                                  <a href="index-2.html" class="theme-btn">
+                                    Multi Page
+                                  </a>
+                                  <a
+                                    href="index-two-page.html"
+                                    class="theme-btn"
+                                  >
+                                    One Page
+                                  </a>
                                 </div>
+                              </div>
+                              <div class="homemenu-content text-center">
+                                <h4 class="homemenu-title">Home 02</h4>
+                              </div>
                             </div>
-                            <div class="client-image">
-                                <img src="assets/img/hero/client-img-2.png" alt="img">
-                                <h5>Excellent <span>7.000+</span> Reviews</h5>
+                            <div class="homemenu">
+                              <div class="homemenu-thumb mb-15">
+                                <img
+                                  src="assets/img/header/home-3.jpg"
+                                  alt="img"
+                                />
+                                <div class="demo-button">
+                                  <a href="index-3.html" class="theme-btn">
+                                    Multi Page
+                                  </a>
+                                  <a
+                                    href="index-three-page.html"
+                                    class="theme-btn"
+                                  >
+                                    One Page
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="homemenu-content text-center">
+                                <h4 class="homemenu-title">Home 03</h4>
+                              </div>
                             </div>
-                        </div>
-                   </div>
-                </div>
+                            <div class="homemenu">
+                              <div class="homemenu-thumb mb-15">
+                                <img
+                                  src="assets/img/header/home-4.jpg"
+                                  alt="img"
+                                />
+                                <div class="demo-button">
+                                  <a href="index-4.html" class="theme-btn">
+                                    Multi Page
+                                  </a>
+                                  <a
+                                    href="index-four-page.html"
+                                    class="theme-btn"
+                                  >
+                                    One Page
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="homemenu-content text-center">
+                                <h4 class="homemenu-title">Home 04</h4>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="has-dropdown active d-xl-none">
+                      <a href="team.html" class="border-none"> Home </a>
+                      <ul class="submenu">
+                        <li><a href="index.html">Home 01</a></li>
+                        <li><a href="index-2.html">Home 02</a></li>
+                        <li><a href="index-3.html">Home 03</a></li>
+                        <li><a href="index-4.html">Home 04</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#about">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#services">Services</a>
+                    </li>
+                    <li>
+                      <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                      <a href="#team">Team</a>
+                    </li>
+                    <li>
+                      <a href="#blog">Blog</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-        </section>
-        
-        <!-- Brand Section Start -->
-        <div class="brand-section section-padding fix pt-0">
-            <div class="container">
-                <div class="brand-text">
-                    <h5 class="text-white">CLIENTS I’VE WORKED WITH</h5>
+            <div
+              class="header-right d-flex justify-content-end align-items-center"
+            >
+              <div class="header-button">
+                <a href="#0" class="search-trigger search-icon"
+                  ><i class="fa-regular fa-magnifying-glass"></i
+                ></a>
+                <a href="contact.html" class="theme-btn">Get In Touch</a>
+              </div>
+              <div class="header__hamburger d-xl-block my-auto">
+                <div class="sidebar__toggle">
+                  <i class="fas fa-bars"></i>
                 </div>
-                <div class="swiper brand-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/brand/01.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/brand/02.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/brand/03.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/brand/04.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/brand/05.png" alt="img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-image text-center">
-                                <img src="assets/img/brand/06.png" alt="img">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </header>
 
-        <!-- Service Section Start -->
-        <section class="service-section fix section-padding section-bg" id="services">
-            <div class="container">
-                <div class="section-title-area">
-                    <div class="section-title">
-                        <h6 class="wow fadeInUp">Our Services</h6>
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">Our Palette of <span>Expertise</span></h2>
-                    </div>
-                    <a href="service.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">See All Services</a>
-                </div>
-                <div class="row g-0">
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="service-box-items style-3">
-                            <div class="icon">
-                                <img src="assets/img/icon/01.svg" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3><a href="service-details.html">Graphic Design</a></h3>
-                                <p>
-                                    Our graphic design services cover everything from materials to digital graphics. We  clearly and effectively.
-                                </p>
-                                <div class="service-btn">
-                                    <a href="service-details.html" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
-                                    <a href="service-details.html" class="link-btn">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="service-box-items style-3">
-                            <div class="icon">
-                                <img src="assets/img/icon/01.svg" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3><a href="service-details.html">Packaging Design</a></h3>
-                                <p>
-                                    Our graphic design services cover everything from materials to digital graphics. We  clearly and effectively.
-                                </p>
-                                <div class="service-btn">
-                                    <a href="service-details.html" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
-                                    <a href="service-details.html" class="link-btn">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="service-box-items style-3">
-                            <div class="icon">
-                                <img src="assets/img/icon/01.svg" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3><a href="service-details.html">UX/UI Design</a></h3>
-                                <p>
-                                    Our graphic design services cover everything from materials to digital graphics. We  clearly and effectively.
-                                </p>
-                                <div class="service-btn">
-                                    <a href="service-details.html" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
-                                    <a href="service-details.html" class="link-btn">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                        <div class="service-box-items style-3 border-none">
-                            <div class="icon">
-                                <img src="assets/img/icon/01.svg" alt="img">
-                            </div>
-                            <div class="content">
-                                <h3><a href="service-details.html">Print Design</a></h3>
-                                <p>
-                                    Our graphic design services cover everything from materials to digital graphics. We  clearly and effectively.
-                                </p>
-                                <div class="service-btn">
-                                    <a href="service-details.html" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
-                                    <a href="service-details.html" class="link-btn">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Search Area Start -->
+    <div class="search-wrap">
+      <div class="search-inner">
+        <i class="fas fa-times search-close" id="search-close"></i>
+        <div class="search-cell">
+          <form method="get">
+            <div class="search-field-holder">
+              <input
+                type="search"
+                class="main-search-input"
+                placeholder="Search..."
+              />
             </div>
-        </section>
+          </form>
+        </div>
+      </div>
+    </div>
 
-        <!-- About Section Start -->
-        <section class="about-section fix section-padding" id="about">
-            <div class="container">
-                <div class="about-wrapper-3">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="about-image">
-                                <img src="assets/img/about/03.png" alt="img">
-                                <div class="video-box">
-                                    <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I" class="video-icon video-popup">
-                                       <i class="fa-solid fa-play"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="about-content">
-                                <div class="section-title">
-                                    <h6 class="wow fadeInUp">What We Do</h6>
-                                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Where Vision Meets <br> Execution, Creating <span>Impactful</span> <br> Brand Stories</h2>
-                                </div>
-                                <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
-                                    At the intersection of vision and execution, we bring creative ideas  team transforms concepts into compelling narratives, ensuring your brand stands out and thrives.
-                                </p>
-                                <div class="about-content-items">
-                                    <div class="about-content-left wow fadeInUp" data-wow-delay=".3s">
-                                        <div class="content">
-                                            <h3>Our Mission</h3>
-                                            <p>Empowering brands through <br>  and strategic vision</p>
-                                        </div>
-                                        <div class="content">
-                                            <h3>Our Vision</h3>
-                                            <p>Shaping the future of branding <br> with creativity and strategy</p>
-                                        </div>
-                                    </div>
-                                    <div class="growth-content wow fadeInUp" data-wow-delay=".5s">
-                                        <div class="text-left">
-                                            <h3>Growth</h3>
-                                            <p>At the intersection of vision <br> ensuring your brand stands <br> out and thrives.</p>
-                                        </div>
-                                        <div class="icon">
-                                            <a href="contact.html" class="arrow-icon">
-                                                <i class="fa-regular fa-arrow-up-right"></i>
-                                            </a>
-                                            <h4>Contact</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="about.html" class="theme-btn wow fadeInUp" data-wow-delay=".3s">About Agency</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Hero Section Start -->
+    <section class="hero-section hero-3">
+      <div class="hero-bg">
+        <img src="assets/img/hero/hero-bg.png" alt="img" />
+      </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h6 class="wow fadeInUp">Creative agency</h6>
+              <h1 class="wow fadeInUp" data-wow-delay=".3s">
+                Empowering Brands with <span>Creative</span> Innovation
+              </h1>
+              <p class="wow fadeInUp" data-wow-delay=".5s">
+                We specialize in delivering cutting-edge solutions tailored to
+                your needs. Whether you're looking you succeed.
+              </p>
+              <div class="hero-button">
+                <a
+                  href="index.html"
+                  class="theme-btn wow fadeInUp"
+                  data-wow-delay=".3s"
+                  >Get Start a Project</a
+                >
+                <a
+                  href="index.html"
+                  class="theme-btn wow fadeInUp style-2"
+                  data-wow-delay=".5s"
+                  >How It’s Works</a
+                >
+              </div>
             </div>
-        </section>
-
-        <!-- Portfolio Section Start -->
-        <section class="portfolio-section fix section-padding section-bg" id="projects">
-            <div class="container">
-                <div class="section-title-area">
-                    <div class="section-title">
-                        <h6 class="wow fadeInUp">Our Portfolio</h6>
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">Some recent <span>work</span></h2>
-                    </div>
-                    <a href="project.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">See All Works</a>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+            <div class="hero-image-items">
+              <div class="hero-image">
+                <img src="assets/img/hero/01.png" alt="img" />
+              </div>
+              <div class="hero-image-2">
+                <img src="assets/img/hero/03.jpg" alt="img" />
+              </div>
+              <div class="hero-image-3">
+                <img src="assets/img/hero/04.jpg" alt="img" />
+              </div>
+              <div class="circle-item">
+                <div class="circle-text">
+                  <img src="assets/img/hero/circle-text.png" alt="img" />
                 </div>
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="portfolio-card-items">
-                            <div class="content">
-                                <div class="title-header">
-                                    <span>Website, UI/UX</span>
-                                    <h3><a href="project-details.html">Digital Agency</a></h3>
-                                </div>
-                                <a href="project-details.html" class="icon">
-                                    <i class="fa-regular fa-arrow-up-right"></i>
-                                </a>
-                            </div>
-                            <div class="thumb">
-                                <img src="assets/img/project/06.jpg" alt="img">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="portfolio-card-items">
-                            <div class="content">
-                                <div class="title-header">
-                                    <span>Website, UI/UX</span>
-                                    <h3><a href="project-details.html">Social Media Management</a></h3>
-                                </div>
-                                <a href="project-details.html" class="icon">
-                                    <i class="fa-regular fa-arrow-up-right"></i>
-                                </a>
-                            </div>
-                            <div class="thumb">
-                                <img src="assets/img/project/07.jpg" alt="img">
-                            </div>
-                        </div>
-                    </div>
+                <div class="border-line">
+                  <a href="about.html" class="arrow-icon">
+                    <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                  </a>
                 </div>
+              </div>
+              <div class="client-image">
+                <img src="assets/img/hero/client-img-2.png" alt="img" />
+                <h5>Excellent <span>7.000+</span> Reviews</h5>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Team Section Start -->
-        <section class="team-section fix section-padding" id="team">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h6 class="wow fadeInUp">Our Members</h6>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Meet The <span>Team</span></h2>
-                </div>
-                <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="team-box-items">
-                            <div class="team-image">
-                                <img src="assets/img/team/01.jpg" alt="img">
-                                <div class="social-icon">
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-linkedin-in"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="team-content">
-                                <h3><a href="team-details.html">Esther Howard</a></h3>
-                                <p>Mid-Level Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="team-box-items">
-                            <div class="team-image">
-                                <img src="assets/img/team/02.jpg" alt="img">
-                                <div class="social-icon">
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-linkedin-in"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="team-content">
-                                <h3><a href="team-details.html">Shikhon Islam</a></h3>
-                                <p>Founder & CEO</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="team-box-items">
-                            <div class="team-image">
-                                <img src="assets/img/team/03.jpg" alt="img">
-                                <div class="social-icon">
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-linkedin-in"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="team-content">
-                                <h3><a href="team-details.html">Theresa Webb</a></h3>
-                                <p>Merchandiser</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                        <div class="team-box-items">
-                            <div class="team-image">
-                                <img src="assets/img/team/04.jpg" alt="img">
-                                <div class="social-icon">
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                    <a href="#" class="icon">
-                                        <i class="fa-brands fa-linkedin-in"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="team-content">
-                                <h3><a href="team-details.html">Floyd Miles</a></h3>
-                                <p>Senior Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Brand Section Start -->
+    <div class="brand-section section-padding fix pt-0">
+      <div class="container">
+        <div class="brand-text">
+          <h5 class="text-white">CLIENTS I’VE WORKED WITH</h5>
+        </div>
+        <div class="swiper brand-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="brand-image text-center">
+                <img src="assets/img/brand/01.png" alt="img" />
+              </div>
             </div>
-        </section>
-
-        <!-- Testimonial Section Start -->
-        <section class="testimonial-section fix section-bg section-padding">
-            <div class="container">
-                <div class="section-title text-center">
-                    <h6 class="wow fadeInUp">Testimonial</h6>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Client <span>Feedback</span></h2>
-                </div>
-                <div class="swiper testimonial-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="testimonial-box-items">
-                                <div class="client-info">
-                                    <div class="client-img">
-                                        <img src="assets/img/testimonial/01.png" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5>Guy Hawkins</h5>
-                                        <span>Austin</span>
-                                    </div>
-                                </div>
-                                <p>
-                                    Agenko transformed our ideas into a stunning reality. Their innovative approach and dedication to our project were exceptional. We couldn’t be happier with the results."
-                                </p>
-                                <div class="testi-bottom">
-                                    <div class="star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                    </div>
-                                    <div class="quote-icon">
-                                        <img src="assets/img/testimonial/quote.png" alt="img">
-                                    </div>
-                                </div>
-                                <div class="icon">
-                                    <img src="assets/img/testimonial/icon.png" alt="img">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testimonial-box-items">
-                                <div class="client-info">
-                                    <div class="client-img">
-                                        <img src="assets/img/testimonial/02.png" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5>Albert Flores</h5>
-                                        <span>Fairfield</span>
-                                    </div>
-                                </div>
-                                <p>
-                                    Agenko transformed our ideas into a stunning reality. Their innovative approach and dedication to our project were exceptional. We couldn’t be happier with the results."
-                                </p>
-                                <div class="testi-bottom">
-                                    <div class="star">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                    </div>
-                                    <div class="quote-icon">
-                                        <img src="assets/img/testimonial/quote.png" alt="img">
-                                    </div>
-                                </div>
-                                <div class="icon">
-                                    <img src="assets/img/testimonial/icon.png" alt="img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="swiper-slide">
+              <div class="brand-image text-center">
+                <img src="assets/img/brand/02.png" alt="img" />
+              </div>
             </div>
-        </section>
-
-        <!-- News Section Start -->
-        <section class="news-section fix section-padding" id="blog">
-            <div class="container">
-                <div class="section-title-area">
-                    <div class="section-title">
-                        <h6 class="wow fadeInUp">Blog & News </h6>
-                        <h2 class="wow fadeInUp" data-wow-delay=".3s">Latest News & <span>Blog</span></h2>
-                    </div>
-                    <a href="news.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">See All Blog</a>
-                </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="news-box-items">
-                            <div class="news-image">
-                                <img src="assets/img/news/06.jpg" alt="img">
-                                <img src="assets/img/news/06.jpg" alt="img">
-                            </div>
-                            <div class="news-content">
-                                <p>August 17, 2024</p>
-                                <h3><a href="news-details.html">The Power of Visual Branding</a></h3>
-                                <div class="news-btn">
-                                    <a href="news-details.html" class="link-btn">View Details</a>
-                                    <a href="news-details.html" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="news-box-items">
-                            <div class="news-image">
-                                <img src="assets/img/news/07.jpg" alt="img">
-                                <img src="assets/img/news/07.jpg" alt="img">
-                            </div>
-                            <div class="news-content">
-                                <p>August 17, 2024</p>
-                                <h3><a href="news-details.html">Top Design Trends 2024</a></h3>
-                                <div class="news-btn">
-                                    <a href="news-details.html" class="link-btn">View Details</a>
-                                    <a href="news-details.html" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                        <div class="news-box-items">
-                            <div class="news-image">
-                                <img src="assets/img/news/08.jpg" alt="img">
-                                <img src="assets/img/news/08.jpg" alt="img">
-                            </div>
-                            <div class="news-content">
-                                <p>August 17, 2024</p>
-                                <h3><a href="news-details.html">The Art of Strategic Creativity</a></h3>
-                                <div class="news-btn">
-                                    <a href="news-details.html" class="link-btn">View Details</a>
-                                    <a href="news-details.html" class="arrow-icon"><img src="assets/img/icon/02.svg" alt="img"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="swiper-slide">
+              <div class="brand-image text-center">
+                <img src="assets/img/brand/03.png" alt="img" />
+              </div>
             </div>
-        </section>
-
-        <!-- Lets Talk Section Start -->
-        <section class="lets-talk-section fix section-padding section-bg pb-0">
-            <div class="container">
-                <div class="lets-talk-wrapper">
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">Have a project in mind? Let’s <br> work together!</h2>
-                    <a href="contact.html" class="theme-btn wow fadeInUp" data-wow-delay=".5s">Let’s Talk!</a>
-                </div>
+            <div class="swiper-slide">
+              <div class="brand-image text-center">
+                <img src="assets/img/brand/04.png" alt="img" />
+              </div>
             </div>
-        </section>
-
-        <!-- Footer Section Start -->
-        <footer class="footer-section section-bg fix">
-            <div class="container">
-                <div class="footer-widgets-wrapper">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <a href="index.html">
-                                        <img src="assets/img/logo/white-logo.svg" alt="img">
-                                    </a>
-                                </div>
-                                <div class="footer-content">
-                                    <p>
-                                        Agenko All Rights Reserved. Designed <br> with passion,  Let's create something <br> amazing together.
-                                    </p>
-                                    <div class="social-icon d-flex align-items-center">
-                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-4 col-md-6 ps-lg-3 wow fadeInUp" data-wow-delay=".4s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <h3>Quick Links</h3>
-                                </div>
-                                <ul class="list-items">
-                                    <li>
-                                        <a href="about.html"> 
-                                            About Us
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="service.html"> 
-                                            Our Services
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="news.html"> 
-                                            Our Blog
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html"> 
-                                            Contact Us
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".6s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <h3>Office</h3>
-                                </div>
-                                <div class="footer-content">
-                                    <p>4517 Washington. Manchester, Kentucky 39495</p>
-                                    <div class="contact-text">
-                                        <h4 class="pb-3"><a href="tel:6035550123">(603) 555-0123</a></h4>
-                                        <h5><a href="mailto:info@example.com">info@example.com</a></h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-3 wow fadeInUp" data-wow-delay=".8s">
-                            <div class="single-footer-widget">
-                                <div class="widget-head">
-                                    <h3>Subscribe to our newsletter</h3>
-                                </div>
-                                <div class="footer-content">
-                                    <div class="footer-input">
-                                        <input type="email" id="email" placeholder="Enter your email">
-                                        <button class="newsletter-btn" type="submit">
-                                            <i class="fa-sharp fa-light fa-paper-plane"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <div class="footer-bottom-wrapper">
-                        <p class="wow fadeInUp" data-wow-delay=".3s">Copyright @ 2024 Agenko</p>
-                        <p class="wow fadeInUp" data-wow-delay=".5s">Designed By <a href="index.html">wordpressriver</a></p>
-                    </div>
-                </div>
+            <div class="swiper-slide">
+              <div class="brand-image text-center">
+                <img src="assets/img/brand/05.png" alt="img" />
+              </div>
             </div>
-        </footer>
+            <div class="swiper-slide">
+              <div class="brand-image text-center">
+                <img src="assets/img/brand/06.png" alt="img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <!--<< All JS Plugins >>-->
-        <script src="assets/js/jquery-3.7.1.min.js"></script>
-        <!--<< Viewport Js >>-->
-        <script src="assets/js/viewport.jquery.js"></script>
-        <!--<< Bootstrap Js >>-->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <!--<< Nice Select Js >>-->
-        <script src="assets/js/jquery.nice-select.min.js"></script>
-        <!--<< Waypoints Js >>-->
-        <script src="assets/js/jquery.waypoints.js"></script>
-        <!--<< Counterup Js >>-->
-        <script src="assets/js/jquery.counterup.min.js"></script>
-        <!--<< Swiper Slider Js >>-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        <!--<< MeanMenu Js >>-->
-        <script src="assets/js/jquery.meanmenu.min.js"></script>
-        <!--<< Magnific Popup Js >>-->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!--<< Wow Animation Js >>-->
-        <script src="assets/js/wow.min.js"></script>
-        <!--<< Main.js >>-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!-- Service Section Start -->
+    <section
+      class="service-section fix section-padding section-bg"
+      id="services"
+    >
+      <div class="container">
+        <div class="section-title-area">
+          <div class="section-title">
+            <h6 class="wow fadeInUp">Our Services</h6>
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+              Our Palette of <span>Expertise</span>
+            </h2>
+          </div>
+          <a
+            href="service.html"
+            class="theme-btn wow fadeInUp"
+            data-wow-delay=".5s"
+            >See All Services</a
+          >
+        </div>
+        <div class="row g-0">
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay=".2s"
+          >
+            <div class="service-box-items style-3">
+              <div class="icon">
+                <img src="assets/img/icon/01.svg" alt="img" />
+              </div>
+              <div class="content">
+                <h3><a href="service-details.html">Graphic Design</a></h3>
+                <p>
+                  Our graphic design services cover everything from materials to
+                  digital graphics. We clearly and effectively.
+                </p>
+                <div class="service-btn">
+                  <a href="service-details.html" class="arrow-icon"
+                    ><img src="assets/img/icon/02.svg" alt="img"
+                  /></a>
+                  <a href="service-details.html" class="link-btn">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay=".4s"
+          >
+            <div class="service-box-items style-3">
+              <div class="icon">
+                <img src="assets/img/icon/01.svg" alt="img" />
+              </div>
+              <div class="content">
+                <h3><a href="service-details.html">Packaging Design</a></h3>
+                <p>
+                  Our graphic design services cover everything from materials to
+                  digital graphics. We clearly and effectively.
+                </p>
+                <div class="service-btn">
+                  <a href="service-details.html" class="arrow-icon"
+                    ><img src="assets/img/icon/02.svg" alt="img"
+                  /></a>
+                  <a href="service-details.html" class="link-btn">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay=".6s"
+          >
+            <div class="service-box-items style-3">
+              <div class="icon">
+                <img src="assets/img/icon/01.svg" alt="img" />
+              </div>
+              <div class="content">
+                <h3><a href="service-details.html">UX/UI Design</a></h3>
+                <p>
+                  Our graphic design services cover everything from materials to
+                  digital graphics. We clearly and effectively.
+                </p>
+                <div class="service-btn">
+                  <a href="service-details.html" class="arrow-icon"
+                    ><img src="assets/img/icon/02.svg" alt="img"
+                  /></a>
+                  <a href="service-details.html" class="link-btn">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay=".8s"
+          >
+            <div class="service-box-items style-3 border-none">
+              <div class="icon">
+                <img src="assets/img/icon/01.svg" alt="img" />
+              </div>
+              <div class="content">
+                <h3><a href="service-details.html">Print Design</a></h3>
+                <p>
+                  Our graphic design services cover everything from materials to
+                  digital graphics. We clearly and effectively.
+                </p>
+                <div class="service-btn">
+                  <a href="service-details.html" class="arrow-icon"
+                    ><img src="assets/img/icon/02.svg" alt="img"
+                  /></a>
+                  <a href="service-details.html" class="link-btn">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section class="about-section fix section-padding" id="about">
+      <div class="container">
+        <div class="about-wrapper-3">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+              <div class="about-image">
+                <img src="assets/img/about/03.png" alt="img" />
+                <div class="video-box">
+                  <a
+                    href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I"
+                    class="video-icon video-popup"
+                  >
+                    <i class="fa-solid fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about-content">
+                <div class="section-title">
+                  <h6 class="wow fadeInUp">What We Do</h6>
+                  <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                    Where Vision Meets <br />
+                    Execution, Creating <span>Impactful</span> <br />
+                    Brand Stories
+                  </h2>
+                </div>
+                <p class="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                  At the intersection of vision and execution, we bring creative
+                  ideas team transforms concepts into compelling narratives,
+                  ensuring your brand stands out and thrives.
+                </p>
+                <div class="about-content-items">
+                  <div
+                    class="about-content-left wow fadeInUp"
+                    data-wow-delay=".3s"
+                  >
+                    <div class="content">
+                      <h3>Our Mission</h3>
+                      <p>
+                        Empowering brands through <br />
+                        and strategic vision
+                      </p>
+                    </div>
+                    <div class="content">
+                      <h3>Our Vision</h3>
+                      <p>
+                        Shaping the future of branding <br />
+                        with creativity and strategy
+                      </p>
+                    </div>
+                  </div>
+                  <div class="growth-content wow fadeInUp" data-wow-delay=".5s">
+                    <div class="text-left">
+                      <h3>Growth</h3>
+                      <p>
+                        At the intersection of vision <br />
+                        ensuring your brand stands <br />
+                        out and thrives.
+                      </p>
+                    </div>
+                    <div class="icon">
+                      <a href="contact.html" class="arrow-icon">
+                        <i class="fa-regular fa-arrow-up-right"></i>
+                      </a>
+                      <h4>Contact</h4>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="about.html"
+                  class="theme-btn wow fadeInUp"
+                  data-wow-delay=".3s"
+                  >About Agency</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section Start -->
+    <section
+      class="portfolio-section fix section-padding section-bg"
+      id="projects"
+    >
+      <div class="container">
+        <div class="section-title-area">
+          <div class="section-title">
+            <h6 class="wow fadeInUp">Our Portfolio</h6>
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+              Some recent <span>work</span>
+            </h2>
+          </div>
+          <a
+            href="project.html"
+            class="theme-btn wow fadeInUp"
+            data-wow-delay=".5s"
+            >See All Works</a
+          >
+        </div>
+        <div class="row">
+          <div
+            class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+            data-wow-delay=".3s"
+          >
+            <div class="portfolio-card-items">
+              <div class="content">
+                <div class="title-header">
+                  <span>Website, UI/UX</span>
+                  <h3><a href="project-details.html">Digital Agency</a></h3>
+                </div>
+                <a href="project-details.html" class="icon">
+                  <i class="fa-regular fa-arrow-up-right"></i>
+                </a>
+              </div>
+              <div class="thumb">
+                <img src="assets/img/project/06.jpg" alt="img" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+            data-wow-delay=".5s"
+          >
+            <div class="portfolio-card-items">
+              <div class="content">
+                <div class="title-header">
+                  <span>Website, UI/UX</span>
+                  <h3>
+                    <a href="project-details.html">Social Media Management</a>
+                  </h3>
+                </div>
+                <a href="project-details.html" class="icon">
+                  <i class="fa-regular fa-arrow-up-right"></i>
+                </a>
+              </div>
+              <div class="thumb">
+                <img src="assets/img/project/07.jpg" alt="img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section Start -->
+    <section class="team-section fix section-padding" id="team">
+      <div class="container">
+        <div class="section-title text-center">
+          <h6 class="wow fadeInUp">Our Members</h6>
+          <h2 class="wow fadeInUp" data-wow-delay=".3s">
+            Meet The <span>Team</span>
+          </h2>
+        </div>
+        <div class="row">
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay=".2s"
+          >
+            <div class="team-box-items">
+              <div class="team-image">
+                <img src="assets/img/team/01.jpg" alt="img" />
+                <div class="social-icon">
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="team-content">
+                <h3><a href="team-details.html">Ayon Khan</a></h3>
+                <p>Senior Backend Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay=".2s"
+          >
+            <div class="team-box-items">
+              <div class="team-image">
+                <img src="assets/img/team/01.jpg" alt="img" />
+                <div class="social-icon">
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="team-content">
+                <h3><a href="team-details.html">Aminur Rahman</a></h3>
+                <p>Mid-Level Frontend Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay=".2s"
+          >
+            <div class="team-box-items">
+              <div class="team-image">
+                <img src="assets/img/team/01.jpg" alt="img" />
+                <div class="social-icon">
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="team-content">
+                <h3><a href="team-details.html">Ayon Khan</a></h3>
+                <p>Senior Backend Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp"
+            data-wow-delay=".2s"
+          >
+            <div class="team-box-items">
+              <div class="team-image">
+                <img src="assets/img/team/01.jpg" alt="img" />
+                <div class="social-icon">
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#" class="icon">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="team-content">
+                <h3><a href="team-details.html">Aminur Rahman</a></h3>
+                <p>Mid-Level Frontend Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section Start -->
+    <section class="testimonial-section fix section-bg section-padding">
+      <div class="container">
+        <div class="section-title text-center">
+          <h6 class="wow fadeInUp">Testimonial</h6>
+          <h2 class="wow fadeInUp" data-wow-delay=".3s">
+            Client <span>Feedback</span>
+          </h2>
+        </div>
+        <div class="swiper testimonial-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-box-items">
+                <div class="client-info">
+                  <div class="client-img">
+                    <img src="assets/img/testimonial/01.png" alt="img" />
+                  </div>
+                  <div class="content">
+                    <h5>Guy Hawkins</h5>
+                    <span>Austin</span>
+                  </div>
+                </div>
+                <p>
+                  Agenko transformed our ideas into a stunning reality. Their
+                  innovative approach and dedication to our project were
+                  exceptional. We couldn’t be happier with the results."
+                </p>
+                <div class="testi-bottom">
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <div class="quote-icon">
+                    <img src="assets/img/testimonial/quote.png" alt="img" />
+                  </div>
+                </div>
+                <div class="icon">
+                  <img src="assets/img/testimonial/icon.png" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-box-items">
+                <div class="client-info">
+                  <div class="client-img">
+                    <img src="assets/img/testimonial/02.png" alt="img" />
+                  </div>
+                  <div class="content">
+                    <h5>Albert Flores</h5>
+                    <span>Fairfield</span>
+                  </div>
+                </div>
+                <p>
+                  Agenko transformed our ideas into a stunning reality. Their
+                  innovative approach and dedication to our project were
+                  exceptional. We couldn’t be happier with the results."
+                </p>
+                <div class="testi-bottom">
+                  <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <div class="quote-icon">
+                    <img src="assets/img/testimonial/quote.png" alt="img" />
+                  </div>
+                </div>
+                <div class="icon">
+                  <img src="assets/img/testimonial/icon.png" alt="img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section Start -->
+    <section class="news-section fix section-padding" id="blog">
+      <div class="container">
+        <div class="section-title-area">
+          <div class="section-title">
+            <h6 class="wow fadeInUp">Blog & News </h6>
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+              Latest News & <span>Blog</span>
+            </h2>
+          </div>
+          <a
+            href="news.html"
+            class="theme-btn wow fadeInUp"
+            data-wow-delay=".5s"
+            >See All Blog</a
+          >
+        </div>
+        <div class="row">
+          <div
+            class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+            data-wow-delay=".3s"
+          >
+            <div class="news-box-items">
+              <div class="news-image">
+                <img src="assets/img/news/06.jpg" alt="img" />
+                <img src="assets/img/news/06.jpg" alt="img" />
+              </div>
+              <div class="news-content">
+                <p>August 17, 2024</p>
+                <h3>
+                  <a href="news-details.html">The Power of Visual Branding</a>
+                </h3>
+                <div class="news-btn">
+                  <a href="news-details.html" class="link-btn">View Details</a>
+                  <a href="news-details.html" class="arrow-icon"
+                    ><img src="assets/img/icon/02.svg" alt="img"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+            data-wow-delay=".5s"
+          >
+            <div class="news-box-items">
+              <div class="news-image">
+                <img src="assets/img/news/07.jpg" alt="img" />
+                <img src="assets/img/news/07.jpg" alt="img" />
+              </div>
+              <div class="news-content">
+                <p>August 17, 2024</p>
+                <h3><a href="news-details.html">Top Design Trends 2024</a></h3>
+                <div class="news-btn">
+                  <a href="news-details.html" class="link-btn">View Details</a>
+                  <a href="news-details.html" class="arrow-icon"
+                    ><img src="assets/img/icon/02.svg" alt="img"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+            data-wow-delay=".7s"
+          >
+            <div class="news-box-items">
+              <div class="news-image">
+                <img src="assets/img/news/08.jpg" alt="img" />
+                <img src="assets/img/news/08.jpg" alt="img" />
+              </div>
+              <div class="news-content">
+                <p>August 17, 2024</p>
+                <h3>
+                  <a href="news-details.html"
+                    >The Art of Strategic Creativity</a
+                  >
+                </h3>
+                <div class="news-btn">
+                  <a href="news-details.html" class="link-btn">View Details</a>
+                  <a href="news-details.html" class="arrow-icon"
+                    ><img src="assets/img/icon/02.svg" alt="img"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lets Talk Section Start -->
+    <section class="lets-talk-section fix section-padding section-bg pb-0">
+      <div class="container">
+        <div class="lets-talk-wrapper">
+          <h2 class="wow fadeInUp" data-wow-delay=".3s">
+            Have a project in mind? Let’s <br />
+            work together!
+          </h2>
+          <a
+            href="contact.html"
+            class="theme-btn wow fadeInUp"
+            data-wow-delay=".5s"
+            >Let’s Talk!</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section section-bg fix">
+      <div class="container">
+        <div class="footer-widgets-wrapper">
+          <div class="row">
+            <div
+              class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <a href="index.html">
+                    <img src="assets/img/logo/white-logo.svg" alt="img" />
+                  </a>
+                </div>
+                <div class="footer-content">
+                  <p>
+                    Agenko All Rights Reserved. Designed <br />
+                    with passion, Let's create something <br />
+                    amazing together.
+                  </p>
+                  <div class="social-icon d-flex align-items-center">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-2 col-lg-4 col-md-6 ps-lg-3 wow fadeInUp"
+              data-wow-delay=".4s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h3>Quick Links</h3>
+                </div>
+                <ul class="list-items">
+                  <li>
+                    <a href="about.html"> About Us </a>
+                  </li>
+                  <li>
+                    <a href="service.html"> Our Services </a>
+                  </li>
+                  <li>
+                    <a href="news.html"> Our Blog </a>
+                  </li>
+                  <li>
+                    <a href="contact.html"> Contact Us </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp"
+              data-wow-delay=".6s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h3>Office</h3>
+                </div>
+                <div class="footer-content">
+                  <p>4517 Washington. Manchester, Kentucky 39495</p>
+                  <div class="contact-text">
+                    <h4 class="pb-3">
+                      <a href="tel:6035550123">(603) 555-0123</a>
+                    </h4>
+                    <h5>
+                      <a href="mailto:support@ovnixsoft.com"
+                        >support@ovnixsoft.com</a
+                      >
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-lg-4 col-md-6 ps-lg-3 wow fadeInUp"
+              data-wow-delay=".8s"
+            >
+              <div class="single-footer-widget">
+                <div class="widget-head">
+                  <h3>Subscribe to our newsletter</h3>
+                </div>
+                <div class="footer-content">
+                  <div class="footer-input">
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Enter your email"
+                    />
+                    <button class="newsletter-btn" type="submit">
+                      <i class="fa-sharp fa-light fa-paper-plane"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-wrapper">
+            <p class="wow fadeInUp" data-wow-delay=".3s">
+              Copyright @ 2024 Agenko
+            </p>
+            <p class="wow fadeInUp" data-wow-delay=".5s">
+              Designed By <a href="index.html">wordpressriver</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
