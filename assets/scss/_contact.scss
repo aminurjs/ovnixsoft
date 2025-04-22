@@ -1,0 +1,85 @@
+.lets-talk-wrapper {
+    @include flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $border-color;
+
+    @include breakpoint (max-md){
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+}
+
+.contact-box-items {
+    background-color: #171717;
+    border-radius: 12px;
+    text-align: center;
+    padding: 40px;
+
+    .icon {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: $theme-color;
+        margin: 0 auto;
+    }
+
+    .content {
+        margin-top: 30px;
+    }
+}
+
+.contact-wrapper {
+    .map-items {
+        .googpemap {
+            iframe {
+                width: 100%;
+                border-radius: 12px;
+                height: 740px;
+            }
+        }
+    }
+
+    .contact-content {
+        background-color: #171717;
+        padding: 60px 40px;
+        border-radius: 12px;
+
+        .contact-form-items {
+            margin-top: 30px;
+
+            .form-clt {
+                span {
+                    color: $text-color;
+                    text-transform: capitalize;
+                    display: block;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+        
+                input,textarea {
+                    color: $text-color;
+                    padding: 18px 20px;
+                    width: 100%;
+                    background-color: transparent;
+                    border: none;
+                    border: 1px solid $border-color;
+
+                    &::placeholder {
+                        color: $text-color;
+                    }
+                }
+        
+                textarea {
+                    padding-bottom: 150px;
+                }
+            }
+        }
+    }
+}

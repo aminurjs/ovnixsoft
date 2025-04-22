@@ -1,0 +1,117 @@
+
+.faq-wrapper {
+    .faq-image {
+        max-width: 540px;
+        
+        img {
+            @include imgw;
+        }
+    }
+
+    .faq-content {
+
+        .accordion-item {
+            border: none !important;
+            background-color: $white;
+    
+            .accordion-header { 
+                .accordion-button { 
+                    font-weight: 400;
+                    color: $white;
+                    border: none !important;
+                    border-radius: 0;
+                    box-shadow: none;
+                    background-color: #171717;
+                    padding: 30px 30px 0;
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    font-family: $body-font;
+
+    
+                    @include breakpoint (max-xl){
+                        font-size: 20px;
+                    }
+    
+                    @include breakpoint (max-sm){
+                        font-size: 18px;
+                        padding: 20px 20px 0;
+                    }
+    
+                    span {
+                        margin-right: 20px;
+                    }
+    
+                    &::after {
+                        content: "\f324";
+                        font-family: $fa;
+                        background: transparent;
+                        font-weight: 500;
+                        transition: all 0.3s ease-in-out !important;
+                        color: $white;
+                        font-size: 16px;
+                    }
+                    &:not(.collapsed)::after {
+                        content: "\f325";
+                        font-family: $fa;
+                        background: transparent;
+                        font-weight: 500;
+                        color: $theme-color;
+                    }
+    
+                    &.collapsed {
+                        border: 1px solid rgba(42, 42, 42, 0.30);
+                        box-shadow: $shadow;
+                        padding: 25px 30px;
+                        color: $white;
+                        background-color: #171717;
+                    }
+                }
+            }
+    
+            .accordion-collapse { 
+    
+                .accordion-body {
+                    padding-left: 30px;
+                    padding-top: 25px;
+                    color: #ffffffb3;
+                    background-color: #171717;
+                    padding-bottom: 28px;
+                }
+            }
+        }
+    }
+
+    .faq-content-2 {
+        margin-right: 50px;
+
+        @include breakpoint (max-xl){
+            margin-right: 0;
+        }
+
+        .faq-client-items {
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid rgba(42, 42, 42, 0.32);
+            background: #171717;
+            margin-top: 50px;
+
+            .client-info {
+                @include flex;
+                gap: 12px;
+                margin-bottom: 30px;
+
+                .content {
+                    h4 {
+                        font-size: 20px;
+                        font-weight: 500;
+                        font-family: $body-font;
+                    }
+
+                    span {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

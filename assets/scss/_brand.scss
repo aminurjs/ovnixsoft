@@ -1,0 +1,48 @@
+.brand-text {
+    position: relative;
+    margin-bottom: 50px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 86px;
+        background-color: $border-color;
+        top: 8px;
+
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 945px;
+        background-color: $border-color;
+        top: 8px;
+        right: 0;
+
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+
+    h5 {
+        font-size: 20px;
+        font-weight: 600;
+        color: $theme-color;
+        padding-left: 110px;
+    }
+}
+
+.brand-section {
+    .brand-slider {
+        margin-right: -20%;
+
+        @include breakpoint (max-xl){
+            margin-right: 0;
+        }
+    }
+}

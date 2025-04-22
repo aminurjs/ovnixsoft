@@ -1,0 +1,272 @@
+
+.footer-widgets-wrapper {
+    padding: 50px 0 80px;
+    position: relative;
+    z-index: 9;
+
+    .single-footer-widget {
+        margin-top: 30px;
+        
+        .widget-head {
+            margin-bottom: 30px;
+
+            @include breakpoint (max-sm){
+               margin-bottom: 20px;
+            }
+
+            h3 {
+                font-weight: bold;
+                color: $white;
+                font-size: 32px;
+                display: inline-block;
+
+                @include breakpoint (max-md){
+                    font-size: 23px;
+                }
+
+                @include breakpoint (max-sm){
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .footer-content {
+            .social-icon {
+                gap: 10px;
+                margin-top: 30px;
+
+                a {
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    border-radius: 50%;
+                    display: inline-block;
+                    background-color: #2A2A2A;           
+                    color: $white;
+                    @include transition;
+
+                    &:hover {
+                        background-color: $theme-color;
+                        color: $header-color;
+                    }
+                }
+            }
+
+            .contact-text {
+                margin-top: 25px;
+
+                h4 {
+                    font-size: 20px;
+                    font-weight: 400;
+                    font-family: $body-font;
+                    text-transform: lowercase;
+                    text-decoration: underline;
+
+                    a {
+                        color: $text-color;
+                    }
+                }
+
+                h5 {
+                    font-size: 20px;
+                    font-weight: 400;
+                    font-family: $body-font;
+                    text-transform: lowercase;
+
+                    a {
+                        color: $text-color;
+                    }
+                }
+            }
+
+            .footer-input {
+                position: relative;
+
+                input {
+                    outline: none;
+                    width: 100%;
+                    color: rgba(245, 245, 244, .6);
+                    background-color: transparent;
+                    border: none;
+                    font-size: 16px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid $border-color;
+
+                    &::placeholder {
+                        color: rgba(245, 245, 244, .6);
+                    }
+                }
+
+                .newsletter-btn {
+                    background-color: #2A2A2A;
+                    width: 36px;
+                    height: 36px;
+                    line-height: 36px;
+                    display: inline-block;
+                    text-align: center;
+                    border-radius: 4px;
+                    color: $white;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+
+        .list-items {
+
+            li {
+                text-transform: capitalize;
+                background-image: linear-gradient($theme-color,$theme-color);
+                background-position: 0 95%;
+                background-repeat: no-repeat;
+                background-size: 0% 1px;
+                display: table;
+                @include transition;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content: "\f061";
+                    font-family: $fa;
+                    opacity: 0;
+                    visibility: hidden;
+                    @include transition;
+                }
+
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+
+                a {
+                    font-size: 18px;
+                    color: $text-color;
+                    position: relative;
+                    font-weight: 400;
+                }
+
+                &:hover {
+                    background-size: 100% 1px;
+
+                    &::before {
+                        opacity: 1;
+                        visibility: visible;
+                        color: $theme-color;
+                    }
+
+                    a {
+                        padding-left: 25px;
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    padding: 30px 0;
+    border-top: 1px solid $border-color;
+
+    .footer-bottom-wrapper {
+        @include flex;
+        justify-content: space-between;
+
+        @include breakpoint (max-sm){
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+    }
+
+    p {
+        color: $white;
+        font-weight: 400;
+
+        a {
+            color: $theme-color;
+            font-weight: 400;
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer-right-content {
+    padding-top: 80px;
+    margin-right: -350px;
+    text-align: center;
+
+    @include breakpoint (max-xl4){
+      margin-right: -75px;
+    }
+
+    @include breakpoint (max-xxl){
+        margin-right: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .radius-btn {
+        font-size: 18px;
+        font-weight: 400;
+        color: $white;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: inline-block;
+        border: 1px solid $border-color;
+        margin: 50px auto 0;
+        padding-top: 50px;
+
+        i {
+            display: block;
+            transform: rotate(-40deg);
+            margin-bottom: 5px;
+        }
+
+        &:hover {
+            background-color: $theme-color;
+            color: $header-color;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: $body-font;
+        margin-top: 50px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+}
+
+.footer-section {
+    &.style-2 {
+        position: relative;
+        z-index: 9;
+
+        &::before {
+            @include before;
+            background-color: #1D1D1D;
+            z-index: -1;
+            left: 73%;
+
+            @include breakpoint (max-xxl){
+                left: 0;
+            }
+        }
+    }
+}

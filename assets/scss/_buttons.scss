@@ -1,0 +1,79 @@
+//>>>>> Component Button Here <<<<<//
+.theme-btn {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    border: none;
+    outline: none !important;
+    background-color: $theme-color;
+    color: $header-color;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 22px 40px;
+    transition: 0.5s ease-in-out;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 120px;
+    line-height: 1;
+    font-family: "Kanit", sans-serif;
+
+    &::after {
+        content: "";
+        background-color: $white;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        clip-path: circle(0% at 50% 50%);
+        transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 0.8s;
+        z-index: -1;
+    }
+
+    i {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        background-color: $white;
+        color: $header-color;
+
+        &::after {
+            clip-path: circle(100% at 50% 50%);
+            transition: all cubic-bezier(0, 0.96, 0.58, 1.1) 4s;
+        }
+    }
+
+
+    @include breakpoint (max-md){
+        padding: 20px 32px;
+    }
+
+    @include breakpoint (max-sm){
+        padding: 18px 30px;
+        font-size: 14px;
+    }
+}
+
+.theme-btn-2 {
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 700;
+    color: $theme-color;
+    text-transform: capitalize;
+
+    i {
+        margin-left: 10px;
+    }
+
+    &:hover {
+        color: $theme-color-2;
+    }
+}
+
+
+//>>>>> Component Button End <<<<<//

@@ -1,0 +1,290 @@
+.team-box-items {
+    margin-top: 30px;
+    overflow: hidden;
+
+    .team-image {
+        position: relative;
+
+        img {
+            @include imgw;
+            border-radius: 4px;
+        }
+
+        .social-icon {
+            position: absolute;
+            top: 12px;
+            right: -100px;
+            display: grid;
+            gap: 8px;
+            background-color: #F5F5F4;
+            padding: 8px;
+            border-radius: 4px;
+            opacity: 0;
+            visibility: hidden;
+            @include transition;
+
+            .icon {
+                width: 44px;
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                border-radius: 4px;
+                border: 1px solid rgba(42, 42, 42, 0.10);
+                color: $header-color;
+
+                &:hover {
+                    background-color: $theme-color;
+                }
+            }
+        }
+    }
+
+    .team-content {
+        padding: 16px;
+        background-color: #1D1D1D;
+        border-radius: 4px;
+        text-align: center;
+        margin-left: 24px;
+        margin-right: 24px;
+        position: relative;
+        z-index: 9;
+        margin-top: -50px;
+        @include transition;
+        border-bottom: 4px solid $theme-color;
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    &:hover {
+        .team-image {
+            .social-icon {
+                right: 12px;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .team-content {
+            background-color: $theme-color;
+
+            h3 {
+                a {
+                    color: $header-color;
+                }
+            }
+
+            p {
+                color: $header-color;
+            }
+        }
+    }
+}
+
+.team-card-items {
+    margin-top: 30px;
+    position: relative;
+    z-index: 9;
+    padding: 30px;
+    border-radius: 14px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: calc(65%);
+        border-radius: 14px;
+        background-color: #1D1D1D;
+        transition: all .35s ease-in-out;
+        z-index: -1;
+
+        @include breakpoint(max-sm){
+            height: calc(60%);
+        }
+    }
+
+    .team-image {
+        img {
+            @include imgw;
+            border-radius: 8px;
+        }
+    }
+
+    .team-content {
+        margin-top: 30px;
+
+        h3 {
+            a {
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .social-icon {
+            margin-top: 20px;
+            gap: 8px;
+            @include flex;
+            justify-content: center;
+
+            a {
+                display: inline-block;
+                width: 44px;
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                border-radius: 8px;
+                background-color: #2A2A2A;
+                color: $white;
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $header-color;
+                }
+            }
+        }
+    }
+
+    &:hover {
+
+        &::before {
+            height: calc(100%);
+            background-color: #1D1D1D;
+        }
+    }
+
+    &.active {
+
+        &::before {
+            height: calc(100%);
+            background-color: #1D1D1D;
+        }
+    }
+}
+
+.team-details-wrapper {
+    .team-details-image {
+
+        img {
+            @include imgw;
+            border-radius: 12px;
+        }
+    }
+
+    .details-content {
+        margin-left: 50px;
+
+        @include breakpoint (max-xl){
+            margin-left: 0;
+        }
+
+        h2 {
+            font-size: 56px;
+            font-weight: 600;
+
+            @include breakpoint (max-sm){
+               font-size: 42px;
+            }
+        }
+
+        span {
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        .team-about-info {
+            margin-top: 30px;
+
+            h3 {
+                font-size: 32px;
+            }
+        }
+
+        .details-info {
+            margin-top: 30px;
+
+            .team-details-info {
+                font-size: 18px;
+                font-weight: 400;
+                font-family: $body-font;
+                position: relative;
+                color: $text-color;
+
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+                
+                span, a {
+                    color: $white;
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    margin-left: 150px;
+                    line-height: 1;
+
+                    @include breakpoint (max-sm){
+                        position: static;
+                    }
+                }
+            }
+        }
+
+        .portfolio-tag {
+            margin-top: 30px;
+
+            ul {
+                @include flex;
+                gap: 10px;
+                margin-top: 30px;
+
+                li {
+                    a {
+                        line-height: 1;
+                        border: 1px solid $white;
+                        padding: 7px 15px;
+                        border-radius: 32px;
+
+                        &:hover {
+                            background-color: $theme-color;
+                            color: $header-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-icon {
+            gap: 8px;
+            margin-top: 50px;
+            
+            h3 {
+                margin-right: 10px;
+            }
+
+            a {
+                display: inline-block;
+                width: 44px;
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                border-radius: 8px;
+                background-color: #2A2A2A;
+                color: $white;
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $header-color;
+                }
+            }
+        }
+    }
+}

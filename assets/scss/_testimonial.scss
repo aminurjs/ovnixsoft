@@ -1,0 +1,130 @@
+.testimonial-box-items {
+    margin-top: 30px;
+    background-color: #1D1D1D;
+    padding: 40px 35px;
+    border-radius: 12px;
+    position: relative;
+    border: 1px solid #1D1D1D;
+    @include transition;
+
+    .client-info {
+        @include flex;
+        gap: 12px;
+        margin-bottom: 20px;
+
+        .content {
+            h5 {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            span {
+                font-size: 16px;
+                color: #F5F5F4;
+            }
+        }
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .testi-bottom {
+        @include flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        .star {
+            color: #55E6A5;
+        }
+    }
+
+    .icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &:hover {
+        border: 1px solid $theme-color;
+    }
+}
+
+.tesimonial-wrapper-2 {
+    .testimonial-image {
+        margin-left: -10%;
+
+        @include breakpoint (max-xl){
+            margin-left: 0;
+        }
+
+        img {
+            @include imgw;
+            border-radius: 4px;
+        }
+    }
+
+    .testimonial-content {
+        margin-left: 80px;
+
+        @include breakpoint (max-xl){
+            margin-left: 0;
+        }
+    }
+
+    .testimonial-card-items {
+        border-radius: 4px;
+        border: 1px solid #2A2A2A;
+        background: #171717;
+        padding: 32px;
+        @include transition;
+
+        .testi-top {
+            @include flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+    
+            .star {
+                color: #55E6A5;
+            }
+        }
+
+        .client-info {
+            @include flex;
+            gap: 12px;
+            margin-top: 30px;
+    
+            .content {
+                h5 {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+    
+                span {
+                    font-size: 16px;
+                    color: #F5F5F4;
+                }
+            }
+        }
+
+        &:hover {
+            border: 1px solid $theme-color;
+        }
+    }
+
+    .testimonial-slider-2 {
+        margin-right: -50%;
+        margin-left: 10%;
+        margin-top: -230px;
+
+        @include breakpoint (max-xl){
+            margin-right: 0;
+            margin-left: 0;
+            margin-top: -50px;
+        }
+
+        @include breakpoint (max-lg){
+            margin-top: 30px;
+        }
+    }
+}
