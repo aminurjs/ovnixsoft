@@ -1923,6 +1923,13 @@ span {
 .offcanvas__logo a img {
   width: 280px;
 }
+.logo {
+  width: 33%;
+}
+.logo img {
+  width: 220px;
+  height: auto;
+}
 
 .offcanvas__wrapper {
   position: relative;
@@ -5338,6 +5345,9 @@ input.main-search-input::placeholder {
 @media (max-width: 991px) {
   .tesimonial-wrapper-2 .testimonial-slider-2 {
     margin-top: 30px;
+  }
+  .logo {
+    width: 50%;
   }
   .logo img {
     width: 200px;
