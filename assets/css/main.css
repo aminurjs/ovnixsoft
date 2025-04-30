@@ -3655,6 +3655,10 @@ span {
 .news-details-area .blog-post-details .comments-area .blog-single-comment {
   border-bottom: 1px solid var(--border);
 }
+.news-details-area .blog-post-details .comments-area .blog-single-comment img {
+  width: 96px;
+  height: 96px;
+}
 @media (max-width: 575px) {
   .news-details-area .blog-post-details .comments-area .blog-single-comment {
     flex-wrap: wrap;
@@ -5246,6 +5250,10 @@ input.main-search-input::placeholder {
   align-items: center;
   gap: 12px;
   margin-bottom: 20px;
+}
+.testimonial-box-items .client-info img {
+  width: 60px;
+  height: 60px;
 }
 .testimonial-box-items .client-info .content h5 {
   font-size: 20px;
