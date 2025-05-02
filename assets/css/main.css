@@ -5380,3 +5380,15 @@ input.main-search-input::placeholder {
   width: 36px;
   height: 36px;
 }
+
+.mobile-view {
+  display: none;
+}
+@media (max-width: 991px) {
+  .desktop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: flex;
+  }
+}
